@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lasse Kuhnt</title>
+  <title>Lasse Kuhnt · Business Card</title>
   <link rel="icon" type="image/png" href="LK.png">
   <meta name="description" content="Links & Kontakt" />
   <meta name="color-scheme" content="dark" />
@@ -18,63 +18,69 @@
     <div class="shell">
 
       <main class="card" aria-label="Kontakt & Links">
-        <header>
-          <div class="brand">
-            <!-- Branding: replace initials -->
-            <div class="monogram" aria-hidden="true">LK</div>
-            <div class="who">
-              <h1>Lasse Kuhnt</h1>
-              <p class="sub">Digital Business Card</p>
+        <div class="card__front">
+          <header>
+            <div class="brand">
+              <!-- Branding: replace initials -->
+              <div class="monogram" aria-hidden="true">LK</div>
+              <div class="who">
+                <h1>Lasse Kuhnt</h1>
+                <p class="sub">Digital Business Card</p>
+              </div>
             </div>
+          </header>
+
+          <!-- Icon buttons -->
+          <section class="links" aria-label="Links">
+            <a class="iconbtn"
+               href="https://www.linkedin.com/in/lassekuhnt"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="LinkedIn öffnen">
+              <!-- LinkedIn (neutral icon) -->
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6.2 9.8V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M6.2 6.6h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                <path d="M10.4 19V9.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10.4 12.5S11.4 9.8 14.7 9.8c3.3 0 3.3 2.7 3.3 2.7V19"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+
+            <a class="iconbtn"
+               href="mailto:mail@lassekuhnt.de"
+               aria-label="E-Mail schreiben">
+              <!-- Mail -->
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4.5 7.8v8.4c0 1.2 1 2.2 2.2 2.2h10.6c1.2 0 2.2-1 2.2-2.2V7.8c0-1.2-1-2.2-2.2-2.2H6.7c-1.2 0-2.2 1-2.2 2.2Z"
+                      stroke="currentColor" stroke-width="2" />
+                <path d="M5.5 7.2 12 12.1l6.5-4.9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+
+            <button id="file-btn" class="iconbtn" type="button" aria-label="Lebenslauf anzeigen">
+              <!-- File -->
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M8 4.8h6.2L18.8 9v10.2c0 1-0.8 1.8-1.8 1.8H8c-1 0-1.8-0.8-1.8-1.8V6.6c0-1 0.8-1.8 1.8-1.8Z"
+                      stroke="currentColor" stroke-width="2"/>
+                <path d="M14.2 4.8V9h4.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M9 13h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M9 16h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </section>
+
+
+          <footer>
+            <div>Contact: mail@lassekuhnt.de <button class="copy-btn" data-text="mail@lassekuhnt.de" data-tooltip="Copy email" aria-label="Copy email to clipboard"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5H7c-1 0-1.8.8-1.8 1.8v10.4c0 1 .8 1.8 1.8 1.8h10.4c1 0 1.8-.8 1.8-1.8v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 3h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+            <div class="fine">© 2026 · Hamburg</div>
+          </footer>
+        </div>
+
+        <div class="card__back" aria-hidden="true">
+          <div class="back-content">
+            <div class="back-monogram" aria-hidden="true">LK</div>
           </div>
-        </header>
-
-        <!-- Icon buttons -->
-        <section class="links" aria-label="Links">
-          <a class="iconbtn"
-             href="https://www.linkedin.com/in/lassekuhnt"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="LinkedIn öffnen">
-            <!-- LinkedIn (neutral icon) -->
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M6.2 9.8V19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M6.2 6.6h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-              <path d="M10.4 19V9.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M10.4 12.5S11.4 9.8 14.7 9.8c3.3 0 3.3 2.7 3.3 2.7V19"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </a>
-
-          <a class="iconbtn"
-             href="mailto:mail@lassekuhnt.de"
-             aria-label="E-Mail schreiben">
-            <!-- Mail -->
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4.5 7.8v8.4c0 1.2 1 2.2 2.2 2.2h10.6c1.2 0 2.2-1 2.2-2.2V7.8c0-1.2-1-2.2-2.2-2.2H6.7c-1.2 0-2.2 1-2.2 2.2Z"
-                    stroke="currentColor" stroke-width="2" />
-              <path d="M5.5 7.2 12 12.1l6.5-4.9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </a>
-
-          <a class="iconbtn"
-             href="/cv.pdf"
-             aria-label="Lebenslauf als PDF öffnen">
-            <!-- File -->
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M8 4.8h6.2L18.8 9v10.2c0 1-0.8 1.8-1.8 1.8H8c-1 0-1.8-0.8-1.8-1.8V6.6c0-1 0.8-1.8 1.8-1.8Z"
-                    stroke="currentColor" stroke-width="2"/>
-              <path d="M14.2 4.8V9h4.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M9 13h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              <path d="M9 16h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </a>
-        </section>
-
-
-        <footer>
-          <div>Contakt: mail@lassekuhnt.de <button class="copy-btn" data-text="mail@lassekuhnt.de" data-tooltip="Copy email" aria-label="Copy email to clipboard"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5H7c-1 0-1.8.8-1.8 1.8v10.4c0 1 .8 1.8 1.8 1.8h10.4c1 0 1.8-.8 1.8-1.8v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 3h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
-          <div class="fine">© 2026 · Hamburg</div>
-        </footer>
+        </div>
       </main>
 
     </div>
@@ -91,6 +97,24 @@
         el.style.setProperty('--my', y + '%');
       });
     });
+    
+    // Flip card to backside (empty) and allow clicking back to return
+    (function(){
+      const fileBtn = document.getElementById('file-btn');
+      const card = document.querySelector('.card');
+      const backFace = document.querySelector('.card__back');
+      if (!fileBtn || !card || !backFace) return;
+
+      fileBtn.addEventListener('click', (e)=>{
+        e.preventDefault();
+        card.classList.add('is-flipped');
+      });
+
+      // clicking the back face flips back to front (no links/buttons on back)
+      backFace.addEventListener('click', ()=>{
+        card.classList.remove('is-flipped');
+      });
+    })();
 
     // Copy to clipboard functionality
     document.querySelectorAll('.copy-btn').forEach(btn => {
@@ -114,4 +138,3 @@
   </script>
 </body>
 </html>
-
