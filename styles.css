@@ -79,7 +79,7 @@ body{
 }
 
 .card{
-  aspect-ratio: 1.7 / 1;
+  aspect-ratio: 1.88 / 1;
   width: 100%;
   border-radius: var(--radius);
   background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.05));
@@ -93,16 +93,6 @@ body{
   display: flex;
   flex-direction: column;
 }
-
-/* 3D flip support */
-.card{ transform-style: preserve-3d; -webkit-transform-style: preserve-3d; will-change: transform; transition: transform 850ms cubic-bezier(.2,.9,.2,1); }
-.card.is-flipped{ transform: rotateY(180deg); }
-
-.card__front, .card__back{ position:absolute; inset:0; border-radius: inherit; backface-visibility: hidden; -webkit-backface-visibility: hidden; display:flex; flex-direction:column; padding: inherit; box-sizing: border-box; }
-.card__front{ transform: rotateY(0deg); z-index:2; pointer-events:auto; }
-.card__back{ transform: rotateY(180deg); align-items:center; justify-content:center; z-index:1; pointer-events:none; }
-.card.is-flipped .card__front{ pointer-events:none; }
-.card.is-flipped .card__back{ pointer-events:auto; z-index:2; }
 
 /* subtle rim light */
 .card::before{
@@ -155,22 +145,6 @@ header{
   background: radial-gradient(220px 120px at 10% 0%, rgba(var(--gold), .22), transparent 60%);
   opacity:.9;
   pointer-events:none;
-}
-
-/* back face monogram */
-.back-monogram{
-  width:140px;
-  height:140px;
-  border-radius:18px;
-  display:grid;
-  place-items:center;
-  font-weight:900;
-  font-size:48px;
-  color:#DAB25C;
-  border:2px solid #DAB25C;
-  background: linear-gradient(135deg, rgba(218,178,92,.12), rgba(218,178,92,.04));
-  box-shadow: 0 28px 60px rgba(0,0,0,.5);
-  margin: 0 auto;
 }
 
 .who{
@@ -384,7 +358,6 @@ footer{
   .links{
     gap: 20px;
     padding-top: 12px;
-    padding-bottom: 12px;
   }
 
   footer{
