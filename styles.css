@@ -375,3 +375,131 @@ footer{
     font-size: 9px;
   }
 }
+
+
+
+
+
+
+
+/* add to styles.css */
+
+/* Taller card variant for CV page */
+.card--tall{
+  aspect-ratio: auto;
+  min-height: 400px;
+}
+
+/* tighter spacing between header/content/footer */
+.card--tall header{ margin-bottom: 10px; }
+.card--tall footer{ margin-top: 10px; }
+
+/* back button (replaces monogram) */
+.back-btn{
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: rgba(255,255,255,.92);
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 10px 28px rgba(0,0,0,.28);
+  text-decoration: none;
+  transition: transform .12s ease, background .12s ease, border-color .12s ease;
+}
+.back-btn svg{ width: 20px; height: 20px; }
+.back-btn:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.16);
+}
+.back-btn:active{ transform: translateY(0px); }
+
+/* CV layout */
+.cv-stack{
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  padding: 8px 0; /* reduced */
+}
+
+.cv-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* reduced */
+}
+
+.cv-item{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: start;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.cv-org{
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: rgba(255,255,255,.92);
+  line-height: 1.15;
+}
+
+.cv-role{
+  margin-top: 6px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.25;
+}
+
+.cv-time{
+  color: rgba(255,255,255,.72);
+  letter-spacing: .08em;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-top: 2px; /* aligns with first line */
+  white-space: nowrap;
+}
+
+@media (max-width: 640px){
+  .card--tall{ min-height: 560px; }
+  .cv-item{ padding: 10px 12px; }
+}
+
+/* links bleiben gleich */
+.cv-link,
+.cv-link:visited{
+  color: inherit;
+  text-decoration: none;
+}
+.cv-link:hover{
+  text-decoration: none;
+}
+
+/* CV logos */
+.cv-left{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.cv-logo{
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  flex: 0 0 34px;
+  margin-top: 2px; /* aligns with first line */
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: 0 10px 28px rgba(0,0,0,.22);
+}
+
+.cv-text{
+  min-width: 0;
+}
